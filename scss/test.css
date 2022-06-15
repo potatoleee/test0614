@@ -49,7 +49,7 @@ table {
 }
 
 body {
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
   color: #8b2131;
   line-height: 1.5;
 }
@@ -62,21 +62,66 @@ body {
   padding: 8px;
 }
 
-header {
-  background-color: #146de1;
-}
-
 .container {
-  max-width: 1140px;
+  max-width: 1172px;
   margin: 0 auto;
-  background: #5a94af;
+  padding: 0px 16px;
 }
 
 a {
   text-decoration: none;
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 32px;
+}
+
+nav {
+  margin-top: 24px;
+}
+
+.nav-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.nav-top button {
+  border: 1px solid #b4b4b4;
+  border-radius: 8px;
+  width: 128px;
+  padding: 0;
+  font-size: 16px;
+  height: 48px;
+  background: white;
+}
+
+.nav-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-bottom li {
+  width: calc((100% - 24px) / 7);
+}
+
+.nav-bottom li a {
+  font-size: 16px;
+  color: #8b2131;
 }
 /*# sourceMappingURL=test.css.map */
