@@ -1,6 +1,7 @@
 @import 'base';
 
 $primary-color :#8b2131;
+$text-second-color:#8a515a;
 
 body{
     font-family:Arial, Helvetica, sans-serif;
@@ -91,10 +92,27 @@ nav{
         text-align: center;
         margin-bottom: 32px;
 
+        h3{
+            margin-top: 8px;
+            font-weight: 700;
+        }
+        p{
+            color:$text-second-color;
+        }
+
         img{
             border-radius: 16px;
+            box-shadow: 0px 5px 10px rgb(188, 188, 188);
         }
         
     }
 
+}
+
+footer{
+    background-color: $primary-color;
+    color:white;
+}
+.footer-content{
+    display: flex;
 }

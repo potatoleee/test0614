@@ -156,7 +156,29 @@ nav {
   margin-bottom: 32px;
 }
 
+.work .work-item h3 {
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+.work .work-item p {
+  color: #8a515a;
+}
+
 .work .work-item img {
   border-radius: 16px;
+  -webkit-box-shadow: 0px 5px 10px #bcbcbc;
+          box-shadow: 0px 5px 10px #bcbcbc;
+}
+
+footer {
+  background-color: #8b2131;
+  color: white;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=test.css.map */
