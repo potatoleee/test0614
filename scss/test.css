@@ -48,6 +48,11 @@ table {
   border-spacing: 0;
 }
 
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #8b2131;
@@ -83,8 +88,13 @@ h1 {
   font-size: 32px;
 }
 
+.col-3 {
+  width: calc(100% / 3 - 16px);
+  margin: 0 8px;
+}
+
 nav {
-  margin-top: 24px;
+  margin: 24px 0px;
 }
 
 .nav-top {
@@ -116,12 +126,37 @@ nav {
           justify-content: center;
 }
 
-.nav-bottom li {
-  width: calc((100% - 24px) / 7);
-}
-
 .nav-bottom li a {
+  text-align: center;
+  width: 100px;
   font-size: 16px;
   color: #8b2131;
+}
+
+.content {
+  margin-top: 16px;
+}
+
+.content h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.work .work-item {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.work .work-item img {
+  border-radius: 16px;
 }
 /*# sourceMappingURL=test.css.map */
