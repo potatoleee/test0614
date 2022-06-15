@@ -1,9 +1,11 @@
+@import 'base';
 
-$primary-color :#7EA16B;
+$primary-color :#8b2131;
 
 body{
     font-family:monospace;
     color:$primary-color;
+    line-height: 1.5;
 }
 
 .btn-primary{
@@ -12,4 +14,20 @@ body{
     text-decoration: none;
     border-radius: 4px;
     padding: 8px;
+}
+header{
+    background-color: rgb(20, 109, 225);
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    background: rgb(90, 148, 175);
+
+}
+a{
+text-decoration: none;
+}
+h1{
+    font-size: 64px;
+    
 }
