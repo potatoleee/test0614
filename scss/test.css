@@ -200,6 +200,11 @@ nav {
   background-color: #8b2131;
 }
 
+.new-product h2 {
+  padding-left: 16px;
+  font-size: 32px;
+}
+
 .new-product ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,7 +215,7 @@ nav {
 
 .new-product li {
   width: calc(100% / 3 - 32px);
-  margin: 0px 16px;
+  margin: 16px 16px;
 }
 
 footer {
