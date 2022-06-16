@@ -86,6 +86,7 @@ img {
 
 h1 {
   font-size: 32px;
+  color: #8b2131;
 }
 
 .col-3 {
@@ -105,6 +106,10 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 16px;
+}
+
+.nav-top a {
+  color: #8b2131;
 }
 
 .nav-top button {
@@ -169,6 +174,43 @@ nav {
   border-radius: 16px;
   -webkit-box-shadow: 0px 5px 10px #bcbcbc;
           box-shadow: 0px 5px 10px #bcbcbc;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide-list li {
+  margin-bottom: 8px;
+}
+
+.slide-list li a {
+  text-align: center;
+  width: 200px;
+  height: 36px;
+  padding: 8px;
+  background-color: #3b1614;
+  color: white;
+  border-radius: 4px;
+}
+
+.slide-list li a:hover {
+  background-color: #8b2131;
+}
+
+.new-product ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.new-product li {
+  width: calc(100% / 3 - 32px);
+  margin: 0px 16px;
 }
 
 footer {
