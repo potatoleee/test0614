@@ -55,12 +55,12 @@ table {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #8b2131;
+  color: #004755;
   line-height: 1.5;
 }
 
 .btn-primary {
-  background-color: #8b2131;
+  background-color: #004755;
   color: antiquewhite;
   text-decoration: none;
   border-radius: 4px;
@@ -86,11 +86,21 @@ img {
 
 h1 {
   font-size: 32px;
-  color: #8b2131;
+  color: #004755;
 }
 
-.col-3 {
+.col-4 {
   width: calc(100% / 3 - 16px);
+  margin: 0 8px;
+}
+
+.col-6 {
+  width: calc(100% / 2 - 16px);
+  margin: 0 8px;
+}
+
+.col-8 {
+  width: calc(100% / 1.5 - 16px);
   margin: 0 8px;
 }
 
@@ -105,21 +115,14 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 16px;
 }
 
 .nav-top a {
-  color: #8b2131;
-}
-
-.nav-top button {
-  border: 1px solid #b4b4b4;
-  border-radius: 8px;
-  width: 128px;
-  padding: 0;
-  font-size: 16px;
-  height: 48px;
-  background: white;
+  color: #004755;
 }
 
 .nav-bottom {
@@ -131,11 +134,39 @@ nav {
           justify-content: center;
 }
 
+.nav-bottom li {
+  position: relative;
+  background-color: transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.nav-bottom li:hover {
+  background-color: #004755;
+}
+
+.nav-bottom li:hover a {
+  color: white;
+}
+
+.nav-bottom li:hover .inside-nav {
+  display: block;
+}
+
 .nav-bottom li a {
   text-align: center;
   width: 100px;
   font-size: 16px;
-  color: #8b2131;
+  color: #004755;
+}
+
+.nav-bottom li .inside-nav {
+  position: absolute;
+  top: 24px;
+  display: none;
+  background-color: #007188;
+  z-index: 2;
 }
 
 .content {
@@ -167,7 +198,7 @@ nav {
 }
 
 .work .work-item p {
-  color: #8a515a;
+  color: #3c727d;
 }
 
 .work .work-item img {
@@ -183,7 +214,7 @@ nav {
 }
 
 .breadCrumbs a {
-  color: #8b2131;
+  color: #004755;
 }
 
 .slide {
@@ -212,7 +243,7 @@ nav {
 }
 
 .slide-list li a:hover {
-  background-color: #8b2131;
+  background-color: #004755;
 }
 
 .new-product h2 {
@@ -239,7 +270,7 @@ nav {
 }
 
 footer {
-  background-color: #8b2131;
+  background-color: #004755;
   color: white;
 }
 

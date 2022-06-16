@@ -1,7 +1,8 @@
 @import 'base';
 
-$primary-color :#8b2131;
-$text-second-color:#8a515a;
+$primary-color :#004755;
+$primary-color-light :#007188;
+$text-second-color:#3c727d;
 
 body{
     font-family:Arial, Helvetica, sans-serif;
@@ -37,8 +38,18 @@ h1{
     color:$primary-color;
 }
 // 三欄算法
-.col-3{
+.col-4{
     width: calc(100% / 3 - 16px);
+    margin: 0 8px ;
+}
+//四欄
+.col-6{
+    width: calc(100% / 2 - 16px);
+    margin: 0 8px ;
+}
+//八欄
+.col-8{
+    width: calc(100% / 1.5 - 16px);
     margin: 0 8px ;
 }
 
@@ -49,21 +60,11 @@ nav{
 .nav-top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 16px;
     
     a{
         color:$primary-color;
-    }
-
-    button{
-       border: 1px solid rgb(180, 180, 180);
-        border-radius: 8px;
-        width: 128px;
-        padding: 0;
-        font-size: 16px;
-        height: 48px;
-        background: white;
-        
     }
 }
 .nav-bottom{
@@ -71,15 +72,39 @@ nav{
     justify-content: center;
        
     li{
-       
+        position: relative;
+        background-color:transparent;
+        transition: all 0.5s;
+        border-radius: 4px 4px 0px 0px;
+
+        &:hover{
+            background-color: $primary-color;
+            a{
+                color:white;
+            }
+            .inside-nav{
+                display: block;
+            }
+        }
         a{
             text-align: center;
             width: 100px;
             font-size: 16px;
             color:$primary-color
         }
+
+    .inside-nav{
+        position: absolute;
+        top:24px;
+        display: none;
+        background-color:$primary-color-light;
+        z-index: 2;
+        
+        
     }
+    } 
 }
+
 .content{
     margin-top: 16px;
     h2{
