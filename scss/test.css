@@ -234,14 +234,32 @@ nav {
   text-align: center;
 }
 
+.new-product li img {
+  border-radius: 8px;
+}
+
 footer {
   background-color: #8b2131;
   color: white;
+}
+
+footer p {
+  padding: 24px;
+  text-align: center;
 }
 
 .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-content dl {
+  margin-top: 20px;
+  text-align: center;
+  width: 20%;
 }
 /*# sourceMappingURL=test.css.map */
