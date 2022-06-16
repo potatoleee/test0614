@@ -182,6 +182,10 @@ nav {
   display: flex;
 }
 
+.slide-list {
+  margin-top: 64px;
+}
+
 .slide-list li {
   margin-bottom: 8px;
 }
