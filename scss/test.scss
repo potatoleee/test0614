@@ -1,6 +1,6 @@
 @import 'base';
 
-$primary-color :#004755;
+$primary-color :#2D2A24;
 $primary-color-light :#007188;
 $text-second-color:#3c727d;
 
@@ -8,6 +8,7 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     color:$primary-color;
     line-height: 1.5;
+    background-color: #F2F0ED;
 }
 
 .btn-primary{
@@ -105,12 +106,32 @@ nav{
     } 
 }
 
+.banner{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 40%;
+    }
+}
+
 .content{
     margin-top: 16px;
     h2{
         font-size: 24px;
         text-align: center;
         margin-bottom: 16px;
+    }
+
+    .work-item{
+        display: flex;
+        justify-content: space-between;
+
+        h3{
+            font-size: 56px;
+        }
+        p{
+            font-size: 16px;
+        }
     }
 }
 
