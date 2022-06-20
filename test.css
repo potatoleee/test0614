@@ -39,7 +39,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -49,8 +49,7 @@ table {
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -110,58 +109,40 @@ nav {
 }
 
 .nav-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 16px;
 }
-
 .nav-left a {
   color: #2D2A24;
 }
 
 .nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .nav-right li {
   position: relative;
   background-color: transparent;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border-radius: 4px 4px 0px 0px;
 }
-
 .nav-right li:hover {
   background-color: #2D2A24;
 }
-
 .nav-right li:hover a {
   color: white;
 }
-
 .nav-right li:hover .inside-nav {
   display: block;
 }
-
 .nav-right li a {
   text-align: center;
   width: 100px;
   font-size: 16px;
   color: #2D2A24;
 }
-
 .nav-right li .inside-nav {
   position: absolute;
   top: 24px;
@@ -171,14 +152,9 @@ nav {
 }
 
 .banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .banner img {
   width: 40%;
 }
@@ -186,82 +162,59 @@ nav {
 .content {
   margin-top: 16px;
 }
-
 .content h2 {
   font-size: 24px;
   text-align: center;
   margin-bottom: 16px;
 }
-
 .content .work-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .content .work-item h3 {
   font-size: 56px;
 }
-
 .content .work-item p {
   font-size: 16px;
 }
 
 .work {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .work .work-item {
   text-align: center;
   margin-bottom: 32px;
 }
-
 .work .work-item h3 {
   margin-top: 8px;
   font-weight: 700;
 }
-
 .work .work-item p {
   color: #3c727d;
 }
-
 .work .work-item img {
   border-radius: 16px;
-  -webkit-box-shadow: 0px 5px 10px #bcbcbc;
-          box-shadow: 0px 5px 10px #bcbcbc;
+  box-shadow: 0px 5px 10px #bcbcbc;
 }
 
 .breadCrumbs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .breadCrumbs a {
   color: #2D2A24;
 }
 
 .slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .slide-list {
   margin-top: 64px;
 }
-
 .slide-list li {
   margin-bottom: 8px;
 }
-
 .slide-list li a {
   text-align: center;
   width: 200px;
@@ -272,7 +225,6 @@ nav {
   color: white;
   border-radius: 4px;
 }
-
 .slide-list li a:hover {
   background-color: #2D2A24;
 }
@@ -281,21 +233,15 @@ nav {
   padding-left: 16px;
   font-size: 32px;
 }
-
 .new-product ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .new-product li {
   width: calc(100% / 3 - 32px);
   margin: 16px 16px;
   text-align: center;
 }
-
 .new-product li img {
   border-radius: 8px;
 }
@@ -304,21 +250,15 @@ footer {
   background-color: #2D2A24;
   color: white;
 }
-
 footer p {
   padding: 24px;
   text-align: center;
 }
 
 .footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .footer-content dl {
   margin-top: 20px;
   text-align: center;
@@ -333,4 +273,3 @@ footer p {
   line-height: 60px;
   text-align: center;
 }
-/*# sourceMappingURL=test.css.map */

@@ -58,7 +58,7 @@ nav{
     margin: 24px 0px;
     
 }
-.nav-top{
+.nav-left{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,7 +68,7 @@ nav{
         color:$primary-color;
     }
 }
-.nav-bottom{
+.nav-right{
     display: flex;
     justify-content: center;
        
@@ -231,4 +231,13 @@ footer{
         width: 20%;
     }
   
+}
+
+.icon-menu{
+    width: 15%;
+    display: block;
+    background-color: orange;
+    color: black;
+    line-height: 60px;
+    text-align: center;
 }
