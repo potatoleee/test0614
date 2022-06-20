@@ -1,12 +1,14 @@
 @import 'base';
 
-$primary-color :#8b2131;
-$text-second-color:#8a515a;
+$primary-color :#2D2A24;
+$primary-color-light :#007188;
+$text-second-color:#3c727d;
 
 body{
     font-family:Arial, Helvetica, sans-serif;
     color:$primary-color;
     line-height: 1.5;
+    background-color: #F2F0ED;
 }
 
 .btn-primary{
@@ -34,53 +36,105 @@ img{
 }
 h1{
     font-size: 32px;
+    color:$primary-color;
 }
 // 三欄算法
-.col-3{
+.col-4{
     width: calc(100% / 3 - 16px);
     margin: 0 8px ;
 }
+//兩欄
+.col-6{
+    width: calc(100% / 2 - 16px);
+    margin: 0 8px ;
+}
+//八欄
+.col-8{
+    width: calc(100% / 1.5 - 16px);
+    margin: 0 8px ;
+}
 
+@media (min-width:767px){
+    
+}
 nav{
     margin: 24px 0px;
     
 }
-.nav-top{
+.nav-left{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 16px;
-
-    button{
-       border: 1px solid rgb(180, 180, 180);
-        border-radius: 8px;
-        width: 128px;
-        padding: 0;
-        font-size: 16px;
-        height: 48px;
-        background: white;
-        
+    
+    a{
+        color:$primary-color;
     }
 }
-.nav-bottom{
+.nav-right{
     display: flex;
     justify-content: center;
        
     li{
-       
+        position: relative;
+        background-color:transparent;
+        transition: all 0.5s;
+        border-radius: 4px 4px 0px 0px;
+
+        &:hover{
+            background-color: $primary-color;
+            a{
+                color:white;
+            }
+            .inside-nav{
+                display: block;
+            }
+        }
         a{
             text-align: center;
             width: 100px;
             font-size: 16px;
             color:$primary-color
         }
+
+    .inside-nav{
+        position: absolute;
+        top:24px;
+        display: none;
+        background-color:$primary-color-light;
+        z-index: 2;
+        
+        
+    }
+    } 
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 40%;
     }
 }
+
 .content{
     margin-top: 16px;
     h2{
         font-size: 24px;
         text-align: center;
         margin-bottom: 16px;
+    }
+
+    .work-item{
+        display: flex;
+        justify-content: space-between;
+
+        h3{
+            font-size: 56px;
+        }
+        p{
+            font-size: 16px;
+        }
     }
 }
 
@@ -108,11 +162,135 @@ nav{
     }
 
 }
+// design-list star//
+
+.breadCrumbs{
+    display: flex;
+    a{
+        color:$primary-color;
+    }
+}
+.slide{
+    display: flex;
+}
+.slide-list{
+    margin-top: 64px;
+        li{
+            margin-bottom: 8px;
+            
+            a{
+                text-align: center;
+                width:200px;
+                height: 36px;
+                font-size: 16px;
+                padding: 8px 0px;
+                background-color: #3b1614;
+                color:white;
+                border-radius: 4px;
+
+                &:hover{
+                  background-color: $primary-color; 
+                }
+            }
+
+        }
+}
+
+.new-product{
+    h2{
+        padding-left: 16px;
+        font-size: 32px;
+    }
+    ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+// li{
+//     width:calc(100% / 3 - 32px);
+//     margin: 16px 16px;
+//     text-align: center;
+
+//     img{
+//         border-radius: 8px;
+//     }
+// }
+}
 
 footer{
     background-color: $primary-color;
     color:white;
+    p{
+        padding: 24px ;
+        text-align: center;
+    }
 }
 .footer-content{
     display: flex;
+    justify-content: center;
+
+    dl{
+        margin-top: 20px;
+        text-align: center;
+        width: 20%;
+    }
+  
 }
+
+.icon-menu{
+    width: 15%;
+    display: block;
+    background-color: orange;
+    color: black;
+    text-align: center;
+    display: none;
+}
+
+@media (max-width:768px) {
+   
+    .icon-menu{
+        display: block;
+    }
+    
+}
+
+//for 迴圈 
+@for $i from 1 through 3 {
+    .fz-#{$i}{
+        font-size: $i em;
+    }
+}
+
+.col-4{
+    width: calc(100% / 3 - 16px);
+    margin: 0 8px ;
+}
+
+@for $i from 1 through 12{
+    .col-#{$i}{
+        --num:calc(12 / #{$i});
+        width:calc(100% / var(--num) - 30px);
+        margin: 0px 8px;
+    }
+}
+
+@media (min-width:768px){
+
+@for $i from 1 through 12{
+    .col-md-#{$i}{
+        --num:calc(12 / #{$i});
+        width:calc(100% / var(--num) - 32px);
+        margin: 0px 8px;
+    }
+}
+
+}
+@media (min-width:1200px){
+
+    @for $i from 1 through 12{
+        .col-lg-#{$i}{
+            --num:calc(12 / #{$i});
+            width:calc(100% / var(--num) - 32px);
+            margin: 0px 8px;
+        }
+    }
+    }
