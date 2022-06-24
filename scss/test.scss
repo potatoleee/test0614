@@ -59,16 +59,22 @@ h1{
 }
 nav{
     margin: 24px 0px;
+   
     
 }
 .nav-left{
-    display: flex;
+    margin-bottom: 16px; display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
     
     a{
         color:$primary-color;
+    }
+    .menu-hambuger{
+        background-color: orange;
+        color: black;
+        text-align: center;
+        display: none;
     }
 }
 .nav-right{
@@ -103,10 +109,10 @@ nav{
         display: none;
         background-color:$primary-color-light;
         z-index: 2;
-        
-        
+           
     }
     } 
+  
 }
 
 .banner{
@@ -236,19 +242,15 @@ footer{
   
 }
 
-.icon-menu{
-    width: 15%;
-    display: block;
-    background-color: orange;
-    color: black;
-    text-align: center;
-    display: none;
-}
 
 @media (max-width:768px) {
-   
-    .icon-menu{
-        display: block;
+    .nav-right{
+        li{
+         display: none;
+             .menu-hambuger{
+                display: block;
+             }
+        }
     }
     
 }

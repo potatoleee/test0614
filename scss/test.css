@@ -110,6 +110,7 @@ nav {
 }
 
 .nav-left {
+  margin-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,11 +120,17 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 16px;
 }
 
 .nav-left a {
   color: #2D2A24;
+}
+
+.nav-left .menu-hambuger {
+  background-color: orange;
+  color: black;
+  text-align: center;
+  display: none;
 }
 
 .nav-right {
@@ -315,17 +322,11 @@ footer p {
   width: 20%;
 }
 
-.icon-menu {
-  width: 15%;
-  display: block;
-  background-color: orange;
-  color: black;
-  text-align: center;
-  display: none;
-}
-
 @media (max-width: 768px) {
-  .icon-menu {
+  .nav-right li {
+    display: none;
+  }
+  .nav-right li .menu-hambuger {
     display: block;
   }
 }
